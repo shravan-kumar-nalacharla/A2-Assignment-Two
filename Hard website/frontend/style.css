@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: poppins-medium;
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(../Assets/fonts/Poppins-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'serif';
+    src: url(../Assets/fonts/Relationship\ of\ mélodrame.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-left: 50px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 4;
+}
+.main .img1 {
+    position: absolute;
+    top: 40%;
+    left:45%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    scale: 0.7;
+    box-shadow:inset rgba(0, 0, 0, 0.5);
+}
+nav input[type="search"]{
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px 10px 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    border: none;
+}
+nav .search{
+    width: 200px;
+    height: 100px;
+}
+
+nav .search .ri-search-line {
+    color: rgb(4, 4, 4);
+    position: relative;
+    top: 28px;
+    left: 15px;
+}
+
+nav h3 {
+    font-size: 30px;
+    font-family: poppins-medium;
+}
+
+.pages ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: white;
+
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left_content {
+    width: 50%;
+    height: 100%;
+    background-color: #fefefe;
+    z-index: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.left_content h1 {
+    rotate: -90deg;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.left_content ul {
+
+    hr {
+        width: 100px;
+        border: 0.5px solid black;
+        opacity: 0.3;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+li::marker{
+    color: #b63029;
+    font-size: 1.4em;
+}
+
+
+.right_content {
+    width: 50%;
+    height: 100%;
+    background-color: #b63029;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_content h1{
+    margin-top: -100px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    font-family: serif;
+    font-weight: 200;
+    color: white;
+    font-size: 50px;
+}
+.right_content .box2{
+    width: 250px;
+    height: 200px;
+    color: white;
+    margin-left: -200px;
+    margin-top: 50px;
+            opacity: 0.8;
+}
+.right_content .box2 .image{
+    width: 100px;
+    height: 200px;
+
+}
+.right_content .box2 .image img{
+    width: 100px;
+    height: 200px;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.right_content .box2 .info{
+
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    margin-top: -200px;
+
+}
+
+.right_content .info .a1{
+    font-family: poppins-medium;
+    font-size: 20px;
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left: 10px;
+}
+
+.box3{
+    width: 300px;
+    height: 180px;
+    margin-left:-250px;
+    margin-top: 450px;
+        color: white;
+}
+
+.box3 .toggle{
+    margin-top: 10px;
+
+}
+
+
+.box3 .toggle .toggle1{
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.box3 .toggle .toggle1 #off1{
+    width: 30px;
+    height: 17px;
+    background-color: rgb(212, 110, 110);
+    border-radius: 20px;
+    opacity: 1;
+}
+.box3 .toggle .toggle1 #off1 .dot{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    opacity:1;
+}
+.box3 .toggle .toggle1 #off2{
+    width: 30px;
+    height: 17px;
+    background-color: rgb(212, 110, 110);
+    border-radius: 20px;
+    opacity: 1;
+}
+.box3 .toggle .toggle1 #off2 .dot{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    opacity:1;
+}
+.toggle button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #dabc92;
+    border: none;
+    margin-top: 30px;
+}
