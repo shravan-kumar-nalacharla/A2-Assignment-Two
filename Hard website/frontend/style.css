@@ -15,12 +15,14 @@ body {
 
 @font-face {
     font-family: 'poppins-medium';
-    src: url(../Assets/fonts/Poppins-Medium.ttf) format("truetype");
+    src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'serif';
-    src: url(../Assets/fonts/Relationship\ of\ mélodrame.ttf);
+    font-family: 'relationship-display';
+    src: url("./assets/fonts/Relationship-of-melodrame.ttf") format("truetype");
+    font-display: swap;
 }
 
 nav {
@@ -93,7 +95,7 @@ nav h3 {
 
 .left_content h1 {
     rotate: -90deg;
-    font-family: serif;
+    font-family: 'relationship-display';
     font-style: italic;
     font-weight: 700;
     font-size: 50px;
@@ -127,7 +129,7 @@ li::marker{
     margin-top: -100px;
     margin-bottom: 200px;
     margin-left: 100px;
-    font-family: serif;
+    font-family: 'relationship-display';
     font-weight: 200;
     color: white;
     font-size: 50px;
